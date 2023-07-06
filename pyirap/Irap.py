@@ -946,6 +946,7 @@ class Irap():
             'knnConfig': {},
             'rfConfig': {},
         }
+        value = np.ascontiguousarray(value)
         parms.update(kwargs)
         # 模型训练
         if parms['model'] == 'SVM':
