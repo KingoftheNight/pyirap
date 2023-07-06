@@ -48,7 +48,8 @@ class Irap():
             self.resPath = self.createFolder(os.path.join(path, 'Result'))
             self.mdlPath = self.createFolder(os.path.join(path, 'Model'))
         self.blastDB = self.createFolder(os.path.join(file_path, 'blastDB'))
-        self.createFolder(os.path.join(self.blastDB, 'pdbaa'), files=['pdbaa.pdb', 'pdbaa.phr', 'pdbaa.pin', 'pdbaa.pog', 'pdbaa.pos', 'pdbaa.pot', 'pdbaa.ppd', 'pdbaa.ppi', 'pdbaa.psq', 'pdbaa.ptf', 'pdbaa.pto', 'taxdb.btd', 'taxdb.bti'])
+        if 'pdbaa' not in os.listdir(self.blastDB):
+            self.blastRepair()
         self.raacDB = self.createFolder(os.path.join(file_path, 'raacDB'), files='RAAC.db')
         self.aaIndexDB = self.createFolder(os.path.join(file_path, 'aaIndexDB'), files='aaIndex.db')
         self.tmpPath = self.createFolder(os.path.join(file_path, 'tmp'))
