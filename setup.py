@@ -11,7 +11,7 @@ setup(name='pyirap',
     install_requires=['scikit-learn', 'skrebate', 'matplotlib', 'seaborn', 'joblib', 'numpy', 'pandas', 'tqdm'],
     entry_points={
         'console_scripts': [
-        'pyirap=pyirap.__main__',
+        'pyirap=pyirap.__main__:Irap',
             ]
         },
     python_requires=">=3.8",
