@@ -109,6 +109,7 @@ class Irap():
                 if type(files) == str:
                     files = [files]
                 for file in files:
+                    print(f'Loading {file}...')
                     urllib.request.urlretrieve(f"http://bioinfor.imu.edu.cn/rpct/static/data/{file}", filename=os.path.join(folder, file))
             return folder
 
