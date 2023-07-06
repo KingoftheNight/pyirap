@@ -8,7 +8,7 @@ setup(name='pyirap',
     author_email='1694822092@qq.com',
     license='BSD 2-Clause',
     packages=['pyirap'],
-    install_requires=['scikit-learn', 'skrebate', 'matplotlib', 'seaborn', 'joblib', 'concurrent', 'collections', 'numpy', 'pandas', 'tqdm'],
+    install_requires=['scikit-learn', 'skrebate', 'matplotlib', 'seaborn', 'joblib', 'numpy', 'pandas', 'tqdm'],
     entry_points={
         'console_scripts': [
         'pyirap=pyirap.__main__',
