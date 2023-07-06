@@ -14,6 +14,6 @@ setup(name='pyirap',
         'pyirap=pyirap.__main__',
             ]
         },
-    python_requires=">=3.6",
+    python_requires=">=3.8",
     include_package_data=True,
     zip_safe=True)
